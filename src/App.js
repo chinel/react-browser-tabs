@@ -12,7 +12,12 @@ function App() {
     });
   }
 
-  function hideHightlight(event) {}
+  function hideHightlight(event) {
+    setHighlightStyle({
+      opacity: 0,
+      left: event.nativeEvent.layerX - 150,
+    });
+  }
 
   return (
     <div className="app">
