@@ -21,12 +21,20 @@ function App() {
             </Tab>
           </div>
 
-          <div className="viewport">Pages Go Here</div>
+          <div className="viewport">
+            {/*Here we did put the route where we want the component to be displayed*/}
+            <Route path="/">
+              <Home />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/features">
+              <Features />
+            </Route>
+          </div>
         </div>
       </div>
-      <Route path="/">
-        <Home />
-      </Route>
     </Router>
   );
 }
