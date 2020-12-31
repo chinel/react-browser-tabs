@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  NavLink,
+} from "react-router-dom";
 import Tab from "./components/Tab";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -13,13 +18,19 @@ function App() {
         <div className="browser">
           <div className="tabs">
             <Tab>
-              <Link to="/">Home</Link>
+              <NavLink to="/" activeClassName="is-active" exact={true}>
+                Home
+              </NavLink>
             </Tab>
             <Tab>
-              <Link to="/about">About</Link>
+              <NavLink to="/about" activeClassName="is-active">
+                About
+              </NavLink>
             </Tab>
             <Tab>
-              <Link to="/features">Features</Link>
+              <NavLink to="/features" activeClassName="is-active">
+                Features
+              </NavLink>
             </Tab>
           </div>
 
