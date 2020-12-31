@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 
-function Tab() {
+function Tab({ children }) {
   const [highlightStyle, setHighlightStyle] = useState({ left: 0, opacity: 0 });
 
   function moveHighlight(event) {
@@ -26,7 +26,7 @@ function Tab() {
       onMouseMove={moveHighlight}
     >
       <div className="highlight" style={highlightStyle} />
-      <a>Home</a>
+      {children}
     </div>
   );
 }
@@ -36,9 +36,15 @@ function App() {
     <div className="app">
       <div className="browser">
         <div className="tabs">
-          <Tab />
-          <Tab />
-          <Tab />
+          <Tab>
+            <a>Home</a>
+          </Tab>
+          <Tab>
+            <a>About</a>
+          </Tab>
+          <Tab>
+            <a>Features</a>
+          </Tab>
         </div>
 
         <div className="viewport">Pages Go Here</div>
