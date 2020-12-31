@@ -3,6 +3,8 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Tab from "./components/Tab";
 import Home from "./pages/Home";
+import About from "./pages/About";
+import Features from "./pages/Features";
 
 function App() {
   return (
