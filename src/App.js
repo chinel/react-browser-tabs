@@ -1,15 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  NavLink,
-} from "react-router-dom";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Features from "./pages/Features";
+import { BrowserRouter as Router } from "react-router-dom";
 import Header from "./components/Header";
+import Routes from "./Routes";
 
 function App() {
   return (
@@ -19,19 +12,7 @@ function App() {
           <Header />
 
           <div className="viewport">
-            {/*Here we did put the route where we want the component to be displayed*/}
-            <Switch>
-              <Route path="/" exact>
-                <Home />
-              </Route>
-
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/features">
-                <Features />
-              </Route>
-            </Switch>
+            <Routes />
           </div>
         </div>
       </div>
