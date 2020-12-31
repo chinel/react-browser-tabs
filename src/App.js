@@ -12,11 +12,17 @@ function App() {
     });
   }
 
+  function hideHightlight(event) {}
+
   return (
     <div className="app">
       <div className="browser">
         <div className="tabs">
-          <div className="tab" onMouseMove={moveHighlight}>
+          <div
+            className="tab"
+            onMouseOut={hideHightlight}
+            onMouseMove={moveHighlight}
+          >
             <div className="highlight" style={highlightStyle} />
             <a>Home</a>
           </div>
