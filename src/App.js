@@ -13,27 +13,30 @@ function App() {
         <div className="browser">
           <div className="tabs">
             <Tab>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </Tab>
             <Tab>
-              <a>About</a>
+              <Link to="/about">About</Link>
             </Tab>
             <Tab>
-              <a>Features</a>
+              <Link to="/features">Features</Link>
             </Tab>
           </div>
 
           <div className="viewport">
             {/*Here we did put the route where we want the component to be displayed*/}
-            <Route path="/">
-              <Home />
-            </Route>
-            <Route path="/about">
-              <About />
-            </Route>
-            <Route path="/features">
-              <Features />
-            </Route>
+            <Switch>
+              <Route path="/" exact>
+                <Home />
+              </Route>
+
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/features">
+                <Features />
+              </Route>
+            </Switch>
           </div>
         </div>
       </div>
