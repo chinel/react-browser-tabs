@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Tab from "./components/Tab";
+import Tab from "./Tab";
 
 export default function Header() {
   return (
