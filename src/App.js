@@ -2,11 +2,16 @@ import React, { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [highlightStyle, setHighlightStyle] = useState({ left: 0 });
+  const [highlightStyle, setHighlightStyle] = useState({ left: 0, opacity: 0 });
 
   function moveHighlight(event) {
     //update highlight style to move the highlight
+    //nativeEvent is html event
+    setHighlightStyle({
+      left: event.nativeEvent.layerX - 150,
+    });
   }
+
   return (
     <div className="app">
       <div className="browser">

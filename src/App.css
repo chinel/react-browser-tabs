@@ -99,7 +99,7 @@ body {
   top: -10px;
   left: -100px;
   border-radius: 50%;
-  opacity: 1;
+  opacity: 0.8;
   pointer-events: none;
   background: radial-gradient(rgba(157, 128, 238, 1), rgba(157, 128, 238, 0));
 }
