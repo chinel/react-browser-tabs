@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [highlightStyle, setHighlightStyle] = useState({ left: 0 });
+
+  function moveHighlight(event) {
+    //update highlight style to move the highlight
+  }
   return (
     <div className="app">
       <div className="browser">
         <div className="tabs">
-          <div className="tab">
-            <div className="highlight" />
+          <div className="tab" onMouseMove={moveHighlight}>
+            <div className="highlight" style={highlightStyle} />
             <a>Home</a>
           </div>
           <div className="tab">
