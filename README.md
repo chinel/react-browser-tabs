@@ -2,7 +2,7 @@
 
 ### [Live Site](https://happy-bhabha-676a03.netlify.app)
 
-![React Browser](https://i.imgur.com/2bIfY43.png)
+![React Browser](https://i.imgur.com/z9UewXE.png)
 
 ## Introduction
 
