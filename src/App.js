@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
       <div className="browser">
         <div className="tabs">
           <div className="tab">
+            <div className="highlight" />
             <a>Home</a>
           </div>
           <div className="tab">
