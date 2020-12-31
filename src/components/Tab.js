@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 export default function Tab({ children }) {
   const [highlightStyle, setHighlightStyle] = useState({ left: 0, opacity: 0 });
 
